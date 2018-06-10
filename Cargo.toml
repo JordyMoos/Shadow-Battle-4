@@ -1,0 +1,9 @@
+[package]
+name = "ShadowBattle4"
+version = "0.1.0"
+
+[[bin]]
+name = "ShadowBattle4"
+
+[dependencies]
+actix = "0.5"
