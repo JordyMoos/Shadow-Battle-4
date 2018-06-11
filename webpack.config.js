@@ -13,6 +13,7 @@ var common = {
     entry: './elm/static/index.js',
     output: {
         path: path.join(__dirname, "dist"),
+        filename: 'elm.js',
     },
     plugins: [
         new HTMLWebpackPlugin({
@@ -20,7 +21,7 @@ var common = {
             template: './elm/static/index.ejs',
             // inject details of output file at end of body
             inject: 'body',
-            inlineSource: '.(js|css)$'
+            inlineSource: '.css$'
         }),
     ],
     resolve: {
