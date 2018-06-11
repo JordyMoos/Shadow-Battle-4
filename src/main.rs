@@ -27,7 +27,7 @@ impl Handler<Ping> for Game {
         } else {
             println!("Ping received {:?}", msg.id);
 
-            ctx.run_later(Duration::new(1, 0), move |act, _| {
+            ctx.run_later(Duration::new(0, 100_000_000), move |act, _| {
                 act.addr.do_send(Ping { id: msg.id + 1 });
             });
         }
