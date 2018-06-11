@@ -6,5 +6,4 @@ version = "0.1.0"
 name = "shadow-battle-4"
 
 [dependencies]
-actix = "0.5"
-futures = "0.2.1"
+actix-web = "0.6"
