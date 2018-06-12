@@ -12,7 +12,8 @@ var TARGET_ENV = process.env.npm_lifecycle_event === 'prod'
 var common = {
     entry: './elm/static/index.js',
     output: {
-        path: path.join(__dirname, "dist"),
+        path: path.join(__dirname, 'dist'),
+        publicPath: '/',
         filename: 'elm.js',
     },
     plugins: [
